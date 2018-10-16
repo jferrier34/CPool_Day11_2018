@@ -8,7 +8,7 @@
 #include<stdlib.h>
 #include"include/mylist.h"
 
-int my_put_in_list (struct linked_list_t **list, char *data)
+int my_put_in_list(struct linked_list_t **list, char *data)
 {
     linked_list_t *element;
 
