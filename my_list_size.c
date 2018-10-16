@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** my_list_size.c
 ** File description:
-** 
+**
 */
 
 #include "my.h"
