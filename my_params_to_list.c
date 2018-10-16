@@ -8,7 +8,7 @@
 #include<stdlib.h>
 #include<include/mylist.h>
 
-int my_put_in_list (struct linked_list_t **list, char *data, char *next)
+int my_put_in_list (struct linked_list_t **list, char *data)
 {
     linked_list_t *element;
 
@@ -23,11 +23,11 @@ int my_put_in_list (struct linked_list_t **list, char *data, char *next)
 linked_list_t *my_params_to_list(int ac, char * const *av)
 {
     linked_list_t *list;
-    *list = NULL;
-    int cpt = 1;
+    list = NULL;
+    int cpt = 0;
 
 
-    while (cpt <= ac) {
+    while (cpt < ac) {
         my_put_in_list(&list, av[cpt]);
         cpt++;
     }
