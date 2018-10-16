@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** my_params_to_list.c
 ** File description:
-** 
+**
 */
 
 #include<stdlib.h>
@@ -25,11 +25,11 @@ linked_list_t *my_params_to_list(int ac, char * const *av)
     linked_list_t *list;
     *list = NULL;
     int cpt = 1;
-    
-    
+
+
     while (cpt <= ac) {
-	my_put_in_list(&list, av[cpt]);
-	cpt++;
+        my_put_in_list(&list, av[cpt]);
+        cpt++;
     }
     return (list);
 }
